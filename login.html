@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Login</title>
+    <link rel="stylesheet" href="stylesheets/all.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.css">
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="js/all.js"></script>
+  </head>
+  <body>
+    <div class="container p-0">
+      <nav class="navbar navbar-expand-md navbar-light px-0">
+        <div class="d-flex justify-content-between">
+          <button class="navbar-toggler d-md-none ml-1 border-0" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button><a class="navbar-brand d-md-none text-center m-0" href="#"><img class="w-75" src="images/logotype-sm-dark.svg" alt=""></a><a class="nav-link text-main d-md-none mr-1" href="../cart.html"><i class="fas fa-shopping-cart"></i></a>
+        </div><a class="navbar-brand d-md-block d-none" href="#"><img src="images/logo-all-dark.svg" height="40" alt=""></a>
+        <button class="navbar-toggler d-none" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+        <div class="collapse navbar-collapse p-md-0 p-3" id="navbarSupportedContent">
+          <ul class="navbar-nav my-auto ml-auto ml-2 mt-2">
+            <li class="nav-item active"><a class="nav-link text-main" href="../index.html">首頁 <span class="sr-only">(current)</span></a></li>
+            <li class="nav-item"><a class="nav-link text-main" href="../product.html">甜點</a></li>
+            <li class="nav-item"><a class="nav-link text-main" href="../login.html">登入</a></li>
+            <li class="nav-item d-md-block d-none"><a class="nav-link text-main" href="../cart.html"><i class="fas fa-shopping-cart"></i></a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+    <div class="contact d-flex my-md-6 my-0">
+      <div class="container p-0">
+        <h3 class="bg-main text-white text-center d-md-none d-block p-4 m-0">會員登入</h3>
+        <div class="row flex-row-reverse justify-content-center d-flex text-center m-0">
+          <div class="col-md-5 p-0">
+            <div class="login_link bg-main_lighter p-md-3 mt-md-3 m-0 p-3">
+              <h4 class="text-main_light mt-2 mb-md-3 mb-4 d-md-block d-none">—— 連結社群帳號 ——</h4>
+              <div class="row p-0 m-0">
+                <div class="col-md-12 col-4 mb-md-1 px-md-2 pl-0 login_link_gutter_right">
+                  <button class="btn bg-white w-100 rounded-0 login_link_btn"><img class="h-50 login_link_img" src="images/ic-facebook-logotype.svg" alt=""></button>
+                </div>
+                <div class="col-md-12 col-4 mb-md-1 px-md-2 p-0">
+                  <button class="btn bg-white w-100 rounded-0 login_link_btn"><img class="h-75 login_link_img" src="images/ic-google.svg" alt=""></button>
+                </div>
+                <div class="col-md-12 col-4 mb-md-1 px-md-2 pr-0 login_link_gutter_left">
+                  <button class="btn bg-white w-100 rounded-0 login_link_btn"><img class="h-50 login_link_img" src="images/ic-yahoo.svg" alt=""></button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-5 pr-md-0 p-0">
+            <div class="bg-main text-white p-0 my-0">
+              <form class="p-3" action="">
+                <h3 class="mb-4 mt-2 d-md-block d-none">會員登入</h3>
+                <div class="form-group bg-main_lighter d-flex align-items-center">
+                  <label class="form_icon px-2 py-1 m-0" for="input_email"><i class="fas fa-user text-main" style="font-size: 20px"></i></label>
+                  <input class="text-main bg-transparent w-100 border-0" id="input_email" type="text" placeholder="電子信箱/手機號碼">
+                </div>
+                <div class="form-group bg-main_lighter d-flex align-items-center">
+                  <label class="form_icon px-2 py-1 m-0" for="input_password"><i class="fas fa-key text-main" style="font-size: 20px"></i></label>
+                  <input class="text-main bg-transparent w-100 border-0" id="input_password" type="password" placeholder="請輸入使用者密碼">
+                </div>
+                <div class="custom-control custom-checkbox mb-1 text-left">
+                  <input class="custom-control-input aa" id="customControlValidation1" type="checkbox" required="">
+                  <label class="custom-control-label" for="customControlValidation1">記住我</label>
+                  <div class="invalid-feedback">Example invalid feedback text</div>
+                </div>
+              </form>
+              <button class="btn bg-accent text-main rounded-0 w-100 p-1" href="" type="submit"> 
+                <h4>登入帳號</h4>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="contact bg-main d-flex p-md-3 px-0 py-3">
+      <div class="container">
+        <div class="row justify-content-center d-flex">
+          <div class="col-md-5 mb-md-0 mb-2 d-flex align-items-center">
+            <div class="d-flex"><img src="images/logo-light.svg" alt="" width="40" height="40">
+              <h4 class="d-inline-block text-white m-0 ml-1 my-auto" height="40">訂閱你我的甜蜜郵件</h4>
+            </div>
+          </div>
+          <div class="col-md-5 text-main align-items-center">
+            <div class="form-group bg-main_lighter d-flex m-0">
+              <label class="form_icon px-2 py-1 m-0" for="input_email"><i class="fas fa-envelope" style="font-size: 20px"></i></label>
+              <input class="text-main bg-transparent w-100 border-0" id="input_email" type="email">
+              <button class="btn btn-accent px-2 py-1 text-main"><i class="far fa-paper-plane" style="font-size: 20px"></i></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="bg-main_lighter p-md-3 px-1 py-3">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-5 d-flex flex-column justify-content-between"><img src="images/logotype.svg" alt="" width="171" height="26">
+            <div class="my-3">
+              <p class="mb-0">07-1234-5678</p><a class="text-main" href="">sweetaste@email.com</a>
+              <p class="mb-0">800 高雄市新興區幸福路 520 號</p>
+            </div>
+          </div>
+          <div class="col-md-5 d-flex justify-content-end"><img class="d-md-block d-none" src="images/sm-今天是個吃甜點的好日子.svg" alt="" width="59" height="218"></div>
+        </div>
+        <div class="row justify-content-center mt-2">
+          <div class="col-md-5">
+            <div class="footer_link_group"><a href=""><i class="fab fa-instagram fa-2x text-main"></i></a><a href=""><i class="fab fa-facebook-square fa-2x text-main"></i></a></div>
+          </div>
+          <div class="col-md-5 d-flex justify-content-end align-items-center"><span class="footer_declaration mt-md-0 mt-3">© 2019 Sweetaste* All Rights Reserved</span></div>
+        </div>
+      </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>

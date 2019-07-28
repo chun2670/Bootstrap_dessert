@@ -1,0 +1,121 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='UTF-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    meta(http-equiv='X-UA-Compatible', content='ie=edge')
+    title Login
+    link(rel='stylesheet', href='stylesheets/all.css')
+    link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.css')
+    script(src='js/jquery-3.4.1.min.js')
+    script(type='text/javascript', src='js/all.js')
+  body
+    //- navbar
+    .container.p-0
+      nav.navbar.navbar-expand-md.navbar-light.px-0
+        //- 手機版設定
+        .d-flex.justify-content-between
+          button.navbar-toggler.d-md-none.ml-1.border-0(type='button', data-toggle='collapse', data-target='#navbarSupportedContent', aria-controls='navbarSupportedContent', aria-expanded='false', aria-label='Toggle navigation')
+            span.navbar-toggler-icon
+          a.navbar-brand.d-md-none.text-center.m-0(href='#')
+            img.w-75(src='images/logotype-sm-dark.svg', alt='')
+          a.nav-link.text-main.d-md-none.mr-1(href='../cart.html')
+            i.fas.fa-shopping-cart
+        //- 電腦版設定
+        a.navbar-brand.d-md-block.d-none(href='#')
+          img(src='images/logo-all-dark.svg', height='40', alt='')
+        button.navbar-toggler.d-none(type='button', data-toggle='collapse', data-target='#navbarSupportedContent', aria-controls='navbarSupportedContent', aria-expanded='false', aria-label='Toggle navigation')
+          span.navbar-toggler-icon
+        #navbarSupportedContent.collapse.navbar-collapse.p-md-0.p-3
+          ul.navbar-nav.my-auto.ml-auto.ml-2.mt-2
+            li.nav-item.active
+              a.nav-link.text-main(href='../index.html')
+                | 首頁 
+                span.sr-only (current)
+            li.nav-item
+              a.nav-link.text-main(href='../product.html') 甜點
+            li.nav-item
+              a.nav-link.text-main(href='../login.html') 登入
+            li.nav-item.d-md-block.d-none
+              a.nav-link.text-main(href='../cart.html')
+                i.fas.fa-shopping-cart
+
+    //- content - login
+    .contact.d-flex.my-md-6.my-0
+      .container.p-0
+        //- 手機版設定
+        h3.bg-main.text-white.text-center.d-md-none.d-block.p-4.m-0 會員登入
+        //- ------
+        .row.flex-row-reverse.justify-content-center.d-flex.text-center.m-0
+          .col-md-5.p-0
+            .login_link.bg-main_lighter.p-md-3.mt-md-3.m-0.p-3
+              h4.text-main_light.mt-2.mb-md-3.mb-4.d-md-block.d-none —— 連結社群帳號 ——
+              .row.p-0.m-0
+                .col-md-12.col-4.mb-md-1.px-md-2.pl-0.login_link_gutter_right
+                  button.btn.bg-white.w-100.rounded-0.login_link_btn
+                    img.h-50.login_link_img(src="images/ic-facebook-logotype.svg", alt="")
+                .col-md-12.col-4.mb-md-1.px-md-2.p-0
+                  button.btn.bg-white.w-100.rounded-0.login_link_btn
+                    img.h-75.login_link_img(src="images/ic-google.svg", alt="")
+                .col-md-12.col-4.mb-md-1.px-md-2.pr-0.login_link_gutter_left
+                  button.btn.bg-white.w-100.rounded-0.login_link_btn
+                    img.h-50.login_link_img(src="images/ic-yahoo.svg", alt="")
+          .col-md-5.pr-md-0.p-0
+            .bg-main.text-white.p-0.my-0
+              form.p-3(action="")
+                h3.mb-4.mt-2.d-md-block.d-none 會員登入
+                .form-group.bg-main_lighter.d-flex.align-items-center
+                  label.form_icon.px-2.py-1.m-0(for='input_email')
+                    i.fas.fa-user.text-main(style='font-size: 20px')
+                  input#input_email.text-main.bg-transparent.w-100.border-0(type='text' placeholder='電子信箱/手機號碼')
+                .form-group.bg-main_lighter.d-flex.align-items-center
+                  label.form_icon.px-2.py-1.m-0(for='input_password')
+                    i.fas.fa-key.text-main(style='font-size: 20px')
+                  input#input_password.text-main.bg-transparent.w-100.border-0(type='password' placeholder='請輸入使用者密碼')
+                .custom-control.custom-checkbox.mb-1.text-left
+                  input#customControlValidation1.custom-control-input.aa(type='checkbox', required='')
+                  label.custom-control-label(for='customControlValidation1') 記住我
+                  .invalid-feedback Example invalid feedback text
+              button.btn.bg-accent.text-main.rounded-0.w-100.p-1(href="" type="submit") 
+                h4 登入帳號
+
+
+    //- contact
+    .contact.bg-main.d-flex.p-md-3.px-0.py-3
+      .container
+        .row.justify-content-center.d-flex
+          .col-md-5.mb-md-0.mb-2.d-flex.align-items-center
+            .d-flex
+              img(src='images/logo-light.svg', alt='', width='40', height='40')
+              h4.d-inline-block.text-white.m-0.ml-1.my-auto(height='40') 訂閱你我的甜蜜郵件
+          .col-md-5.text-main.align-items-center
+            .form-group.bg-main_lighter.d-flex.m-0
+              label.form_icon.px-2.py-1.m-0(for='input_email')
+                i.fas.fa-envelope(style='font-size: 20px')
+              input#input_email.text-main.bg-transparent.w-100.border-0(type='email')
+              button.btn.btn-accent.px-2.py-1.text-main
+                i.far.fa-paper-plane(style='font-size: 20px')
+    //- footer
+    footer.bg-main_lighter.p-md-3.px-1.py-3
+      .container
+        .row.justify-content-center
+          .col-md-5.d-flex.flex-column.justify-content-between
+            img(src='images/logotype.svg', alt='', width='171', height='26')
+            .my-3
+              p.mb-0 07-1234-5678
+              a.text-main(href='') sweetaste@email.com
+              p.mb-0 800 高雄市新興區幸福路 520 號
+          .col-md-5.d-flex.justify-content-end
+            img.d-md-block.d-none(src='images/sm-今天是個吃甜點的好日子.svg', alt='', width='59', height='218')
+        .row.justify-content-center.mt-2
+          .col-md-5
+            .footer_link_group
+              a(href='')
+                i.fab.fa-instagram.fa-2x.text-main
+              a(href='')
+                i.fab.fa-facebook-square.fa-2x.text-main
+          .col-md-5.d-flex.justify-content-end.align-items-center
+            span.footer_declaration.mt-md-0.mt-3 © 2019 Sweetaste* All Rights Reserved
+    script(src='https://code.jquery.com/jquery-3.3.1.slim.min.js', integrity='sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo', crossorigin='anonymous')
+    script(src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js', integrity='sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1', crossorigin='anonymous')
+    script(src='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js', integrity='sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM', crossorigin='anonymous')

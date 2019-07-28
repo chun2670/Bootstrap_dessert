@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Checkout 2</title>
+    <link rel="stylesheet" href="stylesheets/all.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.css">
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="js/all.js"></script>
+  </head>
+  <body>
+    <!-- navbar-->
+    <div class="container p-0">
+      <nav class="navbar navbar-expand-md navbar-light px-0">
+        <!-- 手機版設定-->
+        <div class="d-flex justify-content-between">
+          <button class="navbar-toggler d-md-none ml-1 border-0" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button><a class="navbar-brand d-md-none text-center m-0" href="#"><img class="w-75" src="images/logotype-sm-dark.svg" alt=""></a><a class="nav-link text-main d-md-none mr-1" href="../cart.html"><i class="fas fa-shopping-cart"></i></a>
+        </div>
+        <!-- 電腦版設定--><a class="navbar-brand d-md-block d-none" href="#"><img src="images/logo-all-dark.svg" height="40" alt=""></a>
+        <button class="navbar-toggler d-none" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+        <div class="collapse navbar-collapse p-md-0 p-3" id="navbarSupportedContent">
+          <ul class="navbar-nav my-auto ml-auto ml-2 mt-2">
+            <li class="nav-item active"><a class="nav-link text-main" href="../index.html">首頁 <span class="sr-only">(current)</span></a></li>
+            <li class="nav-item"><a class="nav-link text-main" href="../product.html">甜點</a></li>
+            <li class="nav-item"><a class="nav-link text-main" href="../login.html">登入</a></li>
+            <li class="nav-item d-md-block d-none"><a class="nav-link text-main" href="../cart.html"><i class="fas fa-shopping-cart"></i></a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+    <div class="my-md-3 mb-md-6">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-6 pl-md-0 pr-md-1 p-0 text-main_lighter">
+            <div class="bg-main text-main_lighter p-3 my-0">
+              <div class="row align-items-center mb-4 mx-0">
+                <div class="col-6 px-0">
+                  <h3 class="mb-0">付款</h3>
+                </div>
+                <div class="col-6">
+                  <div class="container d-flex align-items-center">
+                    <div class="timeline_section d-flex justify-content-between">
+                      <div class="timeline_check"><i class="fas fa-check-circle timeline_check_icon">                  </i></div>
+                      <div class="timeline_pointer_active">
+                        <div class="timeline_pointer_center"></div>
+                      </div>
+                      <div class="timeline_pointer"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="checkout">
+                <div class="bg-main text-white p-0 my-0">
+                  <form class="h5 text-main_lighter mb-0" action="">
+                    <div class="form-group">
+                      <label for="inputCardNumber">信用卡卡號                    </label>
+                      <div class="input-group">
+                        <input class="form-control form-control-lg text-main bg-main_lighter border-0 py-3 px-1" id="inputCardNumber" type="text" placeholder="0000-1111-2222-3333" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                        <div class="input-group-append"><span class="input-group-text p-1"><i class="far fa-credit-card"></i></span></div>
+                      </div>
+                    </div>
+                    <div class="form-row align-items-end">
+                      <div class="col-6">
+                        <div class="form-group">
+                          <label for="inputCardOwner">持卡人姓名</label>
+                          <input class="form-control form-control-lg text-main bg-main_lighter w-100 border-0 py-3 px-1" id="inputCardOwner" type="text" placeholder="王">
+                        </div>
+                      </div>
+                      <div class="col-6">
+                        <div class="form-group">
+                          <label for="inputName"></label>
+                          <input class="form-control form-control-lg text-main bg-main_lighter w-100 border-0 py-3 px-1" id="inputCardOwner2" type="text" placeholder="阿呆">
+                        </div>
+                      </div>
+                    </div>
+                    <div>
+                      <label for="inputCardValid">有效期限</label>
+                      <div class="form-row">
+                        <div class="col-6">
+                          <div class="form-group">
+                            <select class="custom-select bg-main_lighter credit_valid_fz" id="inputCardValid" name="">
+                              <option class="font-weight-lighter" selected=""  disabled>月</option>
+                              <option>1</option>
+                              <option>2</option>
+                              <option>3</option>
+                            </select>
+                          </div>
+                        </div>
+                        <div class="col-6">
+                          <div class="form-group">
+                            <select class="custom-select bg-main_lighter credit_valid_fz" id="CardValidYear" name="">
+                              <option selected=""  disabled>年</option>
+                              <option>2019</option>
+                              <option>2020</option>
+                              <option>2021  </option>
+                            </select>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="form-row align-items-end">
+                      <div class="col-6">
+                        <div class="form-group">
+                          <label for="inputCardCode">卡片背後末三碼</label>
+                          <input class="form-control form-control-lg text-main bg-main_lighter w-100 border-0 py-3 px-1" id="inputCardCode" type="text" placeholder="000">
+                        </div>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div><a href="checkout_3.html">
+              <button class="btn bg-accent text-main rounded-0 w-100 p-1" href="" type="submit"> 
+                <h4>下一步</h4>
+              </button></a>
+          </div>
+          <div class="d-none d-md-block col-md-4 px-md-1 px-0">        
+            <div class="cart_summary bg-white text-main_light p-0 font-weight-light border">
+              <div class="h4 cart_summary_title bg-main_lighter text-center p-2 border-bottom mb-0">訂單摘要</div>
+              <div class="p-2">
+                <div class="d-flex justify-content-between"><span>小計</span><span>NT$ 2,700</span></div>
+                <div class="d-flex justify-content-between pt-1"><span>運費</span><span>NT$ 300</span></div>
+                <div class="d-flex justify-content-between pt-1"><span class="h5">總計</span><span class="h5">NT$ 3,000</span></div>
+              </div>
+            </div>
+            <div class="cart_summary bg-white text-main_light p-0 font-weight-light border mt-2">
+              <div class="h4 cart_summary_title bg-main_lighter text-center p-2 border-bottom mb-0">購物清單</div>
+              <div class="d-flex align-items-center p-2">
+                <div>
+                  <div class="bg-cover" style="background-image: url(https://bit.ly/2zL5jN7); height: 80px; width: 120px"></div>
+                </div>
+                <div class="ml-2">
+                  <div class="h6 font-weight-light">焦糖馬卡龍（2）</div>
+                  <div class="h5">NT$ 900              </div>
+                </div>
+              </div>
+              <div class="d-flex align-items-center px-2 pb-2">
+                <div>
+                  <div class="bg-cover" style="background-image: url(https://bit.ly/2zL5jN7); height: 80px; width: 120px"></div>
+                </div>
+                <div class="ml-2">
+                  <div class="h6 font-weight-light">焦糖馬卡龍（2）</div>
+                  <div class="h5">NT$ 900  </div>
+                </div>
+              </div>
+              <div class="d-flex align-items-center px-2 pb-2">
+                <div>
+                  <div class="bg-cover" style="background-image: url(https://bit.ly/2zL5jN7); height: 80px; width: 120px"></div>
+                </div>
+                <div class="ml-2">
+                  <div class="h6 font-weight-light">焦糖馬卡龍（2）</div>
+                  <div class="h5">NT$ 900</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- contact-->
+    <div class="contact bg-main d-flex p-md-3 px-0 py-3">
+      <div class="container">
+        <div class="row justify-content-center d-flex">
+          <div class="col-md-5 mb-md-0 mb-2 d-flex align-items-center">
+            <div class="d-flex"><img src="images/logo-light.svg" alt="" width="40" height="40">
+              <h4 class="d-inline-block text-white m-0 ml-1 my-auto" height="40">訂閱你我的甜蜜郵件</h4>
+            </div>
+          </div>
+          <div class="col-md-5 text-main align-items-center">
+            <div class="form-group bg-main_lighter d-flex m-0">
+              <label class="form_icon px-2 py-1 m-0" for="input_email"><i class="fas fa-envelope" style="font-size: 20px"></i></label>
+              <input class="text-main bg-transparent w-100 border-0" id="input_email" type="email">
+              <button class="btn btn-accent px-2 py-1 text-main"><i class="far fa-paper-plane" style="font-size: 20px"></i></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- footer-->
+    <footer class="bg-main_lighter p-md-3 px-1 py-3">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-5 d-flex flex-column justify-content-between"><img src="images/logotype.svg" alt="" width="171" height="26">
+            <div class="my-3">
+              <p class="mb-0">07-1234-5678</p><a class="text-main" href="">sweetaste@email.com</a>
+              <p class="mb-0">800 高雄市新興區幸福路 520 號</p>
+            </div>
+          </div>
+          <div class="col-md-5 d-flex justify-content-end"><img class="d-md-block d-none" src="images/sm-今天是個吃甜點的好日子.svg" alt="" width="59" height="218"></div>
+        </div>
+        <div class="row justify-content-center mt-2">
+          <div class="col-md-5">
+            <div class="footer_link_group"><a href=""><i class="fab fa-instagram fa-2x text-main"></i></a><a href=""><i class="fab fa-facebook-square fa-2x text-main"></i></a></div>
+          </div>
+          <div class="col-md-5 d-flex justify-content-end align-items-center"><span class="footer_declaration mt-md-0 mt-3">© 2019 Sweetaste* All Rights Reserved</span></div>
+        </div>
+      </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>

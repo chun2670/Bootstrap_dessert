@@ -1,0 +1,185 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='UTF-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    meta(http-equiv='X-UA-Compatible', content='ie=edge')
+    title Checkout 2
+    link(rel='stylesheet', href='stylesheets/all.css')
+    link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.css')
+    script(src='js/jquery-3.4.1.min.js')
+    script(type='text/javascript', src='js/all.js')
+  body
+    // navbar
+    .container.p-0
+      nav.navbar.navbar-expand-md.navbar-light.px-0
+        // 手機版設定
+        .d-flex.justify-content-between
+          button.navbar-toggler.d-md-none.ml-1.border-0(type='button', data-toggle='collapse', data-target='#navbarSupportedContent', aria-controls='navbarSupportedContent', aria-expanded='false', aria-label='Toggle navigation')
+            span.navbar-toggler-icon
+          a.navbar-brand.d-md-none.text-center.m-0(href='#')
+            img.w-75(src='images/logotype-sm-dark.svg', alt='')
+          a.nav-link.text-main.d-md-none.mr-1(href='../cart.html')
+            i.fas.fa-shopping-cart
+        // 電腦版設定
+        a.navbar-brand.d-md-block.d-none(href='#')
+          img(src='images/logo-all-dark.svg', height='40', alt='')
+        button.navbar-toggler.d-none(type='button', data-toggle='collapse', data-target='#navbarSupportedContent', aria-controls='navbarSupportedContent', aria-expanded='false', aria-label='Toggle navigation')
+          span.navbar-toggler-icon
+        #navbarSupportedContent.collapse.navbar-collapse.p-md-0.p-3
+          ul.navbar-nav.my-auto.ml-auto.ml-2.mt-2
+            li.nav-item.active
+              a.nav-link.text-main(href='../index.html')
+                | 首頁 
+                span.sr-only (current)
+            li.nav-item
+              a.nav-link.text-main(href='../product.html') 甜點
+            li.nav-item
+              a.nav-link.text-main(href='../login.html') 登入
+            li.nav-item.d-md-block.d-none
+              a.nav-link.text-main(href='../cart.html')
+                i.fas.fa-shopping-cart
+
+    //- content
+    .my-md-3.mb-md-6
+      .container
+        .row.justify-content-center
+          .col-md-6.pl-md-0.pr-md-1.p-0.text-main_lighter
+            .bg-main.text-main_lighter.p-3.my-0
+              .row.align-items-center.mb-4.mx-0
+                .col-6.px-0
+                  h3.mb-0 付款
+                .col-6
+                  .container.d-flex.align-items-center
+                    .timeline_section.d-flex.justify-content-between
+                      .timeline_check
+                        i.fas.fa-check-circle.timeline_check_icon                   
+                      .timeline_pointer_active
+                        .timeline_pointer_center
+                      .timeline_pointer
+
+              div.checkout
+                .bg-main.text-white.p-0.my-0
+                  form.h5.text-main_lighter.mb-0(action="")
+                    .form-group
+                      label(for='inputCardNumber') 信用卡卡號                    
+                      .input-group
+                        input#inputCardNumber.form-control.form-control-lg.text-main.bg-main_lighter.border-0.py-3.px-1(type='text', placeholder="0000-1111-2222-3333", aria-label="Recipient's username", aria-describedby='basic-addon2')
+                        .input-group-append
+                          span.input-group-text.p-1
+                            i.far.fa-credit-card
+
+                    .form-row.align-items-end
+                      .col-6
+                        .form-group
+                          label(for='inputCardOwner') 持卡人姓名
+                          input#inputCardOwner.form-control.form-control-lg.text-main.bg-main_lighter.w-100.border-0.py-3.px-1(type='text', placeholder='王')
+                      .col-6
+                        .form-group
+                          label(for='inputName')
+                          input#inputCardOwner2.form-control.form-control-lg.text-main.bg-main_lighter.w-100.border-0.py-3.px-1(type='text', placeholder='阿呆')
+                    div
+                      label(for='inputCardValid') 有效期限
+                      .form-row
+                        .col-6
+                          .form-group
+                            select#inputCardValid.custom-select.bg-main_lighter.credit_valid_fz(name='')
+                              option.font-weight-lighter(selected='', disabled) 月
+                              option 1
+                              option 2
+                              option 3
+                        .col-6
+                          .form-group
+                            select#CardValidYear.custom-select.bg-main_lighter.credit_valid_fz(name='')
+                              option(selected='', disabled) 年
+                              option 2019
+                              option 2020
+                              option 2021  
+                    .form-row.align-items-end
+                      .col-6
+                        .form-group
+                          label(for='inputCardCode') 卡片背後末三碼
+                          input#inputCardCode.form-control.form-control-lg.text-main.bg-main_lighter.w-100.border-0.py-3.px-1(type='text', placeholder='000')
+                          
+                    //- .form-group
+                    //-   input#inputCode.form-control.form-control-lg.text-main.bg-main_lighter.w-100.border-0.py-3.px-1(type='text', placeholder='夢想街')
+            a(href="checkout_3.html")
+              button.btn.bg-accent.text-main.rounded-0.w-100.p-1(href="" type="submit") 
+                h4 下一步
+
+          //- 右欄
+          .d-none.d-md-block.col-md-4.px-md-1.px-0         
+            .cart_summary.bg-white.text-main_light.p-0.font-weight-light.border
+              .h4.cart_summary_title.bg-main_lighter.text-center.p-2.border-bottom.mb-0 訂單摘要
+              div.p-2
+                div.d-flex.justify-content-between
+                  span 小計
+                  span NT$ 2,700
+                div.d-flex.justify-content-between.pt-1
+                  span 運費
+                  span NT$ 300
+                div.d-flex.justify-content-between.pt-1
+                  span.h5 總計
+                  span.h5 NT$ 3,000
+            .cart_summary.bg-white.text-main_light.p-0.font-weight-light.border.mt-2
+              .h4.cart_summary_title.bg-main_lighter.text-center.p-2.border-bottom.mb-0 購物清單
+              .d-flex.align-items-center.p-2
+                div
+                  .bg-cover(style='background-image: url(https://bit.ly/2zL5jN7); height: 80px; width: 120px')
+                div.ml-2
+                  .h6.font-weight-light 焦糖馬卡龍（2）
+                  .h5 NT$ 900              
+              .d-flex.align-items-center.px-2.pb-2
+                div
+                  .bg-cover(style='background-image: url(https://bit.ly/2zL5jN7); height: 80px; width: 120px')
+                div.ml-2
+                  .h6.font-weight-light 焦糖馬卡龍（2）
+                  .h5 NT$ 900  
+              .d-flex.align-items-center.px-2.pb-2
+                div
+                  .bg-cover(style='background-image: url(https://bit.ly/2zL5jN7); height: 80px; width: 120px')
+                div.ml-2
+                  .h6.font-weight-light 焦糖馬卡龍（2）
+                  .h5 NT$ 900
+
+
+
+    // contact
+    .contact.bg-main.d-flex.p-md-3.px-0.py-3
+      .container
+        .row.justify-content-center.d-flex
+          .col-md-5.mb-md-0.mb-2.d-flex.align-items-center
+            .d-flex
+              img(src='images/logo-light.svg', alt='', width='40', height='40')
+              h4.d-inline-block.text-white.m-0.ml-1.my-auto(height='40') 訂閱你我的甜蜜郵件
+          .col-md-5.text-main.align-items-center
+            .form-group.bg-main_lighter.d-flex.m-0
+              label.form_icon.px-2.py-1.m-0(for='input_email')
+                i.fas.fa-envelope(style='font-size: 20px')
+              input#input_email.text-main.bg-transparent.w-100.border-0(type='email')
+              button.btn.btn-accent.px-2.py-1.text-main
+                i.far.fa-paper-plane(style='font-size: 20px')
+    // footer
+    footer.bg-main_lighter.p-md-3.px-1.py-3
+      .container
+        .row.justify-content-center
+          .col-md-5.d-flex.flex-column.justify-content-between
+            img(src='images/logotype.svg', alt='', width='171', height='26')
+            .my-3
+              p.mb-0 07-1234-5678
+              a.text-main(href='') sweetaste@email.com
+              p.mb-0 800 高雄市新興區幸福路 520 號
+          .col-md-5.d-flex.justify-content-end
+            img.d-md-block.d-none(src='images/sm-今天是個吃甜點的好日子.svg', alt='', width='59', height='218')
+        .row.justify-content-center.mt-2
+          .col-md-5
+            .footer_link_group
+              a(href='')
+                i.fab.fa-instagram.fa-2x.text-main
+              a(href='')
+                i.fab.fa-facebook-square.fa-2x.text-main
+          .col-md-5.d-flex.justify-content-end.align-items-center
+            span.footer_declaration.mt-md-0.mt-3 © 2019 Sweetaste* All Rights Reserved
+    script(src='https://code.jquery.com/jquery-3.3.1.slim.min.js', integrity='sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo', crossorigin='anonymous')
+    script(src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js', integrity='sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1', crossorigin='anonymous')
+    script(src='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js', integrity='sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM', crossorigin='anonymous')

@@ -1,0 +1,320 @@
+@import "../node_modules/bootstrap/scss/functions";
+@import "helpers/variables";
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+$main: #3F5D45;
+$main_light: #8DA291;
+$main_lighter: #EAF0ED;
+$accent: #ffe180;
+
+*{
+  // outline: 1px solid blue;
+  padding: 0;
+  margin: 0;
+  // 防反白
+  -webkit-user-select:none;
+  -moz-user-select:none;
+  -o-user-select:none;
+  user-select:none;
+}
+
+html,body{
+  color: #3F5D45;
+  padding: 0;
+  margin: 0;
+}
+a{
+ text-decoration: none;
+}
+select {
+  -webkit-appearance: none;
+  border-radius: 0px !important;
+  height: 60px !important;
+}
+.bg-cover{
+ background-size: cover;
+ background-position: center center;
+}
+.position_relative{
+  position: relative;
+}
+.ab_center{
+ position: absolute;
+ top: 50%;
+ left: 50%;
+ transform: translate(-50%,-50%);
+}
+.postion_center{
+ position: absolute;
+ right: 0px;
+ left: 0px;
+ top: 0px;
+ bottom: 0px;
+}
+// 取消 input 點選的提示外框
+input:focus,label:focus{
+  outline: none;
+}
+// 文字垂直
+.text_direction{
+  writing-mode: vertical-rl;
+}
+@media screen and (max-width: 767px){
+  .text_direction{
+    writing-mode: horizontal-tb;
+  }
+}
+.vertical_rl{
+  writing-mode: vertical-rl;
+}
+.zindex_-1{
+ z-index: -1;
+}
+.zindex_-2{
+ z-index: -2;
+}
+.zindex_-20{
+ z-index: -20;
+}
+
+
+
+// header
+.header_bg {
+  height: 496px;
+}
+.header_area{
+  margin-top: -90px;
+}
+.link_area{
+  height: 256px;
+  z-index: 2;
+}
+.link_title{
+  font-size: 24px;
+  letter-spacing: 10px;
+  font-weight: bolder;
+}
+.link_cover_1{
+  background-color: rgba(255, 225, 128, 0.8);
+}
+.link_cover_2{
+  background-color: rgba(63, 93, 69, 0.8);
+  transition: background-color 0.5s;
+}
+.link_area:hover .link_title_hover{
+  color: rgba(63, 93, 69, 0.8) !important;
+}
+.link_area:hover .link_cover_hover{
+  background-color: rgba(255, 225, 128, 0.8) !important;
+}
+
+
+// section
+.section_img{
+  min-height: 250px;
+}
+.my_reduce{
+  margin-top: -24px;
+  margin-bottom: -24px;
+}
+.section-content{
+  max-height: 420px;
+}
+.line-height{
+  line-height: 2em;
+}
+// 電腦版
+@media screen and (min-width: 767px){
+  .line-height{
+    line-height: 2.8em;
+  }
+}
+
+
+// card
+.card_photo_container{
+  max-height: 315px;
+  overflow: hidden;
+}
+.border_width{
+  border: 1px solid blue;
+  border-color: #EAF0ED;
+  padding: 15px;
+  margin: 0;
+  height: auto;
+}
+.card_focus{
+  // width: 36px;
+  height: 106px;
+  padding: 6px;
+  position: absolute;
+  left: 20px;
+}
+.card_heart{
+  position: absolute;
+  right: 20px;
+  top: 20px;
+}
+
+
+// contact
+
+
+// footer
+.fa-instagram{
+  margin-right: 6px;
+}
+.footer_declaration{
+  letter-spacing: 0.05em;
+}
+
+
+// login
+input::placeholder {
+  color:  #8DA291;
+} 
+.login_link_btn{
+  height: 56px;
+}
+// login 手機
+@media screen and (max-width: 767px){
+  .login_link_gutter_right{
+    padding-right: 5px !important;
+  }
+  .login_link_gutter_left{
+    padding-left: 5px !important;
+  }
+  .login_link_img{
+    height: 30% !important;
+  }
+}
+
+
+// prodcut
+.product_title{
+  width: 90px;
+  position: absolute;
+  right: 40px;
+  top: 40px;
+}
+@media screen and (max-width: 767px){
+  .product_bg{
+    height: 277px;
+  }
+  .product_title{
+    width: 60px !important;
+  }
+}
+
+
+// cart
+.cart_row_img{
+  height: 110px;
+  width: 110px;
+}
+.cart_amount{
+  width: 145px;
+}
+.cart_amount_btn{
+  width: 48px;
+  height: 48px;
+}
+@media screen and (max-width: 767px){
+  .cart_row_img{
+    height: 110px;
+    width: 130px;
+  }
+  .price{
+    border-top: 1px solid rgba($black, .1);
+  }
+  .cart_summary{
+    background-color: white !important;
+    color: $main !important;
+  }
+  .cart_summary_title{
+    background-color: $main_lighter;
+  }
+}
+
+
+
+// 只有 checkout 的 input 點選背景會變白
+.checkout{
+  input:focus {
+  background-color: white !important;
+  }
+  select:onclick{
+    background-color: white !important;
+  }
+}
+// checkout 1
+.timeline_section {
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  height: 1px;
+  background-color: $main_light;
+}
+.timeline_pointer{
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: $main;
+  border: 1px solid $main_light;
+  transform: translateY(-50%);
+}
+.timeline_pointer_active{
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: $main;
+  border: 1px solid white;
+  transform: translateY(-50%);
+}
+.timeline_pointer_center{
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background-color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+.timeline_check{
+  position: relative;
+}
+.timeline_check_icon{
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+
+// checkout 2
+.credit_valid_fz{
+  font-size: 20px !important;
+}
+
+
+// success
+.success_bg{
+  height: 500px;
+}
+.success_message{
+  width: 300px;
+  margin-top: -10px;
+}
+@media screen and (max-width: 767px){
+  .success_message{
+    margin-top: -30px;
+  }
+}
+.success_timeline{
+  width: 150px;
+}
+
