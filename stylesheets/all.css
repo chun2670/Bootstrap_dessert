@@ -13022,93 +13022,6 @@ a.text-accent:hover, a.text-accent:focus {
   }
 }
 
-* {
-  padding: 0;
-  margin: 0;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -o-user-select: none;
-  -ms-user-select: none;
-      user-select: none;
-}
-
-html, body {
-  color: #3F5D45;
-  padding: 0;
-  margin: 0;
-}
-
-a {
-  text-decoration: none;
-}
-
-select {
-  -webkit-appearance: none;
-  border-radius: 0px !important;
-  height: 60px !important;
-}
-
-.bg-cover {
-  background-size: cover;
-  background-position: center center;
-}
-
-.position_relative {
-  position: relative;
-}
-
-.ab_center {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-}
-
-.postion_center {
-  position: absolute;
-  right: 0px;
-  left: 0px;
-  top: 0px;
-  bottom: 0px;
-}
-
-input:focus, label:focus {
-  outline: none;
-}
-
-.text_direction {
-  -webkit-writing-mode: vertical-rl;
-      -ms-writing-mode: tb-rl;
-          writing-mode: vertical-rl;
-}
-
-@media screen and (max-width: 767px) {
-  .text_direction {
-    -webkit-writing-mode: horizontal-tb;
-        -ms-writing-mode: lr-tb;
-            writing-mode: horizontal-tb;
-  }
-}
-
-.vertical_rl {
-  -webkit-writing-mode: vertical-rl;
-      -ms-writing-mode: tb-rl;
-          writing-mode: vertical-rl;
-}
-
-.zindex_-1 {
-  z-index: -1;
-}
-
-.zindex_-2 {
-  z-index: -2;
-}
-
-.zindex_-20 {
-  z-index: -20;
-}
-
 .header_bg {
   height: 496px;
 }
@@ -13235,53 +13148,6 @@ input::placeholder {
   }
 }
 
-.product_title {
-  width: 90px;
-  position: absolute;
-  right: 40px;
-  top: 40px;
-}
-
-@media screen and (max-width: 767px) {
-  .product_bg {
-    height: 277px;
-  }
-  .product_title {
-    width: 60px !important;
-  }
-}
-
-.cart_row_img {
-  height: 110px;
-  width: 110px;
-}
-
-.cart_amount {
-  width: 145px;
-}
-
-.cart_amount_btn {
-  width: 48px;
-  height: 48px;
-}
-
-@media screen and (max-width: 767px) {
-  .cart_row_img {
-    height: 110px;
-    width: 130px;
-  }
-  .price {
-    border-top: 1px solid rgba(0, 0, 0, 0.1);
-  }
-  .cart_summary {
-    background-color: white !important;
-    color: #3F5D45 !important;
-  }
-  .cart_summary_title {
-    background-color: #EAF0ED;
-  }
-}
-
 .checkout input:focus {
   background-color: white !important;
 }
@@ -13344,8 +13210,39 @@ input::placeholder {
           transform: translate(-50%, -50%);
 }
 
-.credit_valid_fz {
-  font-size: 20px !important;
+.success_bg {
+  height: 500px;
+}
+
+.success_message {
+  width: 300px;
+  margin-top: -10px;
+}
+
+@media screen and (max-width: 767px) {
+  .success_message {
+    margin-top: -30px;
+  }
+}
+
+.success_timeline {
+  width: 150px;
+}
+
+.product_title {
+  width: 90px;
+  position: absolute;
+  right: 40px;
+  top: 40px;
+}
+
+@media screen and (max-width: 767px) {
+  .product_bg {
+    height: 277px;
+  }
+  .product_title {
+    width: 60px !important;
+  }
 }
 
 .success_bg {
@@ -13365,5 +13262,80 @@ input::placeholder {
 
 .success_timeline {
   width: 150px;
+}
+
+html, body {
+  color: #3F5D45;
+}
+
+a {
+  text-decoration: none;
+}
+
+select {
+  -webkit-appearance: none;
+  border-radius: 0px !important;
+  height: 60px !important;
+}
+
+.bg-cover {
+  background-size: cover;
+  background-position: center center;
+}
+
+.position_relative {
+  position: relative;
+}
+
+.ab_center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.postion_center {
+  position: absolute;
+  right: 0px;
+  left: 0px;
+  top: 0px;
+  bottom: 0px;
+}
+
+input:focus, label:focus {
+  outline: none;
+}
+
+.text_direction {
+  -webkit-writing-mode: vertical-rl;
+      -ms-writing-mode: tb-rl;
+          writing-mode: vertical-rl;
+}
+
+@media screen and (max-width: 767px) {
+  .text_direction {
+    -webkit-writing-mode: horizontal-tb;
+        -ms-writing-mode: lr-tb;
+            writing-mode: horizontal-tb;
+  }
+}
+
+.vertical_rl {
+  -webkit-writing-mode: vertical-rl;
+      -ms-writing-mode: tb-rl;
+          writing-mode: vertical-rl;
+}
+
+.zindex_-1 {
+  z-index: -1;
+}
+
+.zindex_-2 {
+  z-index: -2;
+}
+
+.zindex_-20 {
+  z-index: -20;
 }
 /*# sourceMappingURL=all.css.map */

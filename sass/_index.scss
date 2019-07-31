@@ -1,0 +1,94 @@
+$main: #3F5D45;
+$main_light: #8DA291;
+$main_lighter: #EAF0ED;
+$accent: #ffe180;
+
+// header
+.header_bg {
+  height: 496px;
+}
+.header_area{
+  margin-top: -90px;
+}
+.link_area{
+  height: 256px;
+  z-index: 2;
+}
+.link_title{
+  font-size: 24px;
+  letter-spacing: 10px;
+  font-weight: bolder;
+}
+.link_cover_1{
+  background-color: rgba($accent, 0.8);
+}
+.link_cover_2{
+  background-color: rgba($main, 0.8);
+  transition: background-color 0.5s;
+}
+.link_area:hover .link_title_hover{
+  color: rgba($main, 0.8) !important;
+}
+.link_area:hover .link_cover_hover{
+  background-color: rgba($accent, 0.8) !important;
+}
+
+
+// section
+.section_img{
+  min-height: 250px;
+}
+.my_reduce{
+  margin-top: -24px;
+  margin-bottom: -24px;
+}
+.section-content{
+  max-height: 420px;
+}
+.line-height{
+  line-height: 2em;
+}
+// 電腦版
+@media screen and (min-width: 767px){
+  .line-height{
+    line-height: 2.8em;
+  }
+}
+
+
+// card
+.card_photo_container{
+  max-height: 315px;
+  overflow: hidden;
+}
+.border_width{
+  border: 1px solid blue;
+  border-color: $main_lighter;
+  padding: 15px;
+  margin: 0;
+  height: auto;
+}
+.card_focus{
+  // width: 36px;
+  height: 106px;
+  padding: 6px;
+  position: absolute;
+  left: 20px;
+}
+.card_heart{
+  position: absolute;
+  right: 20px;
+  top: 20px;
+}
+
+
+// contact
+
+
+// footer
+.fa-instagram{
+  margin-right: 6px;
+}
+.footer_declaration{
+  letter-spacing: 0.05em;
+}

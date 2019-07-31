@@ -1,0 +1,57 @@
+.checkout input:focus {
+  background-color: white !important; }
+
+.checkout select:onclick {
+  background-color: white !important; }
+
+.timeline_section {
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  height: 1px;
+  background-color: #104219; }
+
+.timeline_pointer {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #3F5D45;
+  border: 1px solid #104219;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%); }
+
+.timeline_pointer_active {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #3F5D45;
+  border: 1px solid white;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%); }
+
+.timeline_pointer_center {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background-color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%); }
+
+.timeline_check {
+  position: relative; }
+
+.timeline_check_icon {
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%); }

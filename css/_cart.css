@@ -1,0 +1,22 @@
+.cart_row_img {
+  height: 110px;
+  width: 110px; }
+
+.cart_amount {
+  width: 145px; }
+
+.cart_amount_btn {
+  width: 48px;
+  height: 48px; }
+
+@media screen and (max-width: 767px) {
+  .cart_row_img {
+    height: 110px;
+    width: 130px; }
+  .price {
+    border-top: 1px solid rgba(0, 0, 0, 0.1); }
+  .cart_summary {
+    background-color: white !important;
+    color: #3F5D45 !important; }
+  .cart_summary_title {
+    background-color: #EAF0ED; } }

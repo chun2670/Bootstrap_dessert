@@ -1,0 +1,26 @@
+$main: #3F5D45;
+$main_light: #8DA291;
+$main_lighter: #EAF0ED;
+$accent: #ffe180;
+
+// login
+input::placeholder {
+  color:  $main_light;
+} 
+.login_link_btn{
+  height: 56px;
+}
+// login 手機
+@media screen and (max-width: 767px){
+  .login_link_gutter_right{
+    padding-right: 5px !important;
+  }
+  .login_link_gutter_left{
+    padding-left: 5px !important;
+  }
+  .login_link_img{
+    height: 30% !important;
+  }
+}
+
+

@@ -1,0 +1,16 @@
+
+// prodcut
+.product_title{
+  width: 90px;
+  position: absolute;
+  right: 40px;
+  top: 40px;
+}
+@media screen and (max-width: 767px){
+  .product_bg{
+    height: 277px;
+  }
+  .product_title{
+    width: 60px !important;
+  }
+}
